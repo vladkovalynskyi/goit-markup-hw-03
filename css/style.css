@@ -299,10 +299,19 @@ body {
     color: var(--accent);
 }
 
-.header-prt {
-    border-bottom: 1px solid #E7E9FC;
-}
+/* ----------------PORTFOLIO PAGE------------------ */
 
+.portfolio {
+}
+.port-btn {
+    margin-top: 96px;
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+    gap: 24px;
+}
 .buttons {
     color: var(--primary-brand);
     font-size: 16px;
@@ -310,6 +319,11 @@ body {
     line-height: 1.5;
     text-align: center;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
     border: 1px solid var(--accent);
     border-radius: 4px;
     background-color: var(--light);
@@ -321,9 +335,30 @@ body {
     background-color: var(--pressed-state);
 }
 
+.prt-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 48px 24px;
+    margin-bottom: 120px;
+}
+
 .card-items {
-    box-sizing: border-box;
-    border: 1px solid #E7E9FC;
+    display: flex;
+    justify-content: flex-start;
+    height: 420px;
+    border: 1px solid var(--accent);
+}
+
+.portcards-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 16px;
+    gap: 8px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 
