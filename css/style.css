@@ -55,26 +55,38 @@ body {
     text-decoration: none;
 }
 
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
 /* ---------------------------HEADER----------------------- */
 .header {
     border-bottom: 1px solid var(--accent);
+    
+}
+
+.header .container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 72px;
+    justify-content: space-between;
 }
 
 .nav {
     display: flex;
     align-items: center;
     gap: 76px;
+    
 }
 
 .nav-logo {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
     /* position: absolute; */
     font-family: 'Raleway';
     font-weight: 800;
@@ -95,7 +107,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     gap: 40px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -107,6 +120,8 @@ body {
 .nav-item {
     color: var(--dark);
     text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .nav-item:hover,
@@ -119,7 +134,10 @@ body {
 .address-list {
     display: flex;
     flex-direction: row;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
     gap: 40px;
 }
 
@@ -129,8 +147,7 @@ body {
     color: var(--text);
     text-decoration: none;
     font-style: normal;
-    /* position: absolute; */
-
+    /*  */
 }
 
 .address-mail:hover, 
@@ -141,41 +158,37 @@ body {
 }
 /* ----------------HERO SECTION--------------- */
 .hero-section {
-    display: flex;
-    height: 600px;
-    left: 0px;
     color: #FFF;
     background-color: var(--dark);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    
 }
-.hero-textbtn {
+
+.hero-section .container {
     display: flex;
     flex-direction: column;
     gap: 48px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    align-items: center;
+}
+
+.hero-textbtn {
+    
 }
 .hero-text {
     font-family: 'Roboto', sans-serif;
-    width: 494px;
+    width: 496px;
     margin: 0;
 }
 
 .hero-button {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 16px 32px;
-    gap: 10px;
-    align-self: center;
     font-family: inherit;
     background-color: var(--primary-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.5;
-    align-items: center;
     letter-spacing: 0.04em;
     cursor: pointer;
     color: #ffffff;
@@ -187,11 +200,14 @@ body {
     background-color: var(--pressed-state); 
 }
 /*--------------------STRATEGY------------------ */
+.strategy .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+}
 .strategy-list {
     display: flex;
-    width: 1128px;
-    height: 104px;
-    margin: 120px;
+    margin: 0;
     padding: 0px;
     gap: 24px;
 }
@@ -203,15 +219,10 @@ body {
     justify-content: space-between;
     padding: 0px;
     gap: 8px;
-    width: 264px;
-    height: 104px;
 }
 /*--------------------DOING----------------------- */
-.doing {
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
-    margin-bottom: 120px;
+.doing .container {
+    padding-bottom: 120px;
 }
 
 .doing-list {
@@ -220,17 +231,21 @@ body {
     gap: 24px;
     padding: 0;
     margin: 0;
+    margin-top: 72px;
+}
+
+.doing-items {
+    display: block;
 }
 /* -------------------TEAM----------------------- */
 
 .section-team {
-    display: flex;
-    flex-direction: column;
-    height: 732px;
-    justify-content: center;
-    padding: 0;
-    gap: 72px;
     background-color: var(--light);
+}
+
+.section-team .container {
+    padding-top: 120px ;
+    padding-bottom: 120px;
 }
 
 .team-list {
@@ -238,51 +253,42 @@ body {
     justify-content: center;
     gap: 24px;
     padding: 0;
+    margin: 0;
 
 }
 .cards-team {
-    width: 264px;
-    height: 380px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 0px 0px 32px;
-    gap: 32px;  
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    margin-top: 72px;
 }
 
 .card-content {
-    width: 232px;
-    height: 56px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 32px 0px ;
     gap: 8px;
 }
 /* ----------------------FOOTER----------------------  */
 .footer {
-    display: flex;
-    align-items:center;
-    width: 1440px;
-    height: 310px;
     color: var(--accent);
     background-color: var(--dark);
 }
 
-.div-foot {
+.footer .container {
     display: flex;
     flex-direction: column;
-    width: 264px;
-    height: 110px;
-    margin-left: 156px;
     gap: 16px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
 }
 .footer-logo {
     font-family: 'Raleway';
@@ -297,14 +303,17 @@ body {
 
 .footer-text {
     color: var(--accent);
+    width: 264px;
 }
 
 /* ----------------PORTFOLIO PAGE------------------ */
 
-.portfolio {
+.portfolio .container {
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 .port-btn {
-    margin-top: 96px;
+    margin: 0;
     margin-bottom: 72px;
     display: flex;
     flex-direction: row;
@@ -338,27 +347,26 @@ body {
 .prt-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:space-between;
     padding: 0;
     margin: 0;
-    gap: 48px 24px;
-    margin-bottom: 120px;
+    gap: 48px 0 ;
 }
 
 .card-items {
-    display: flex;
-    justify-content: flex-start;
-    height: 420px;
-    border: 1px solid var(--accent);
 }
 
 .portcards-text {
     display: flex;
     flex-direction: column;
-    padding: 0px 16px;
+    padding: 32px 0px 32px 16px;
     gap: 8px;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    border: 1px solid var(--accent);
+    border-top: none;
+}
+
+.img {
+    display: block;
 }
 
 
