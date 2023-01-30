@@ -61,6 +61,9 @@ body {
     padding-right: 15px;
     margin: 0 auto;
 }
+.img {
+    display: block;
+}
 /* ---------------------------HEADER----------------------- */
 .header {
     border-bottom: 1px solid var(--accent);
@@ -68,10 +71,6 @@ body {
 }
 
 .header .container {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -136,18 +135,18 @@ body {
     flex-direction: row;
     margin: 0;
     padding: 0;
-    padding-top: 24px;
-    padding-bottom: 24px;
     gap: 40px;
 }
 
 .address-mail,
 .address-phone {
+    display: block;
     font-family: 'Roboto', sans-serif;
     color: var(--text);
     text-decoration: none;
     font-style: normal;
-    /*  */
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .address-mail:hover, 
@@ -160,15 +159,13 @@ body {
 .hero-section {
     color: #FFF;
     background-color: var(--dark);
-    
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-section .container {
     display: flex;
     flex-direction: column;
-    gap: 48px;
-    padding-top: 188px;
-    padding-bottom: 188px;
     align-items: center;
 }
 
@@ -179,6 +176,7 @@ body {
     font-family: 'Roboto', sans-serif;
     width: 496px;
     margin: 0;
+    margin-bottom: 48px;
 }
 
 .hero-button {
@@ -200,9 +198,12 @@ body {
     background-color: var(--pressed-state); 
 }
 /*--------------------STRATEGY------------------ */
-.strategy .container {
+.strategy {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+.strategy .container {
+    
     
 }
 .strategy-list {
@@ -220,9 +221,16 @@ body {
     padding: 0px;
     gap: 8px;
 }
+
+.strategy-item .text {
+    line-height: 1.5;
+}
 /*--------------------DOING----------------------- */
+.doing {
+    padding-bottom: 120px;  
+}
 .doing .container {
-    padding-bottom: 120px;
+    
 }
 
 .doing-list {
@@ -241,11 +249,12 @@ body {
 
 .section-team {
     background-color: var(--light);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .section-team .container {
-    padding-top: 120px ;
-    padding-bottom: 120px;
+    
 }
 
 .team-list {
@@ -256,16 +265,17 @@ body {
     margin: 0;
 
 }
+
+.section-team .header-two {
+    margin-bottom: 72px;
+}
+
 .cards-team {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    margin-top: 72px;
 }
 
 .card-content {
@@ -280,14 +290,15 @@ body {
 .footer {
     color: var(--accent);
     background-color: var(--dark);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer .container {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    
     
 }
 .footer-logo {
@@ -304,13 +315,17 @@ body {
 .footer-text {
     color: var(--accent);
     width: 264px;
+    line-height: 1.5;
 }
 
 /* ----------------PORTFOLIO PAGE------------------ */
-
-.portfolio .container {
+.portfolio {
     padding-top: 96px;
     padding-bottom: 120px;
+}
+
+.portfolio .container {
+    
 }
 .port-btn {
     margin: 0;
@@ -365,9 +380,7 @@ body {
     border-top: none;
 }
 
-.img {
-    display: block;
-}
+
 
 
 
